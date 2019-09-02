@@ -1,0 +1,10 @@
+${PODS_ROOT}/Target Support Files/Pods-Room Services/Pods-Room Services-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/Auk/Auk.framework
+${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework
+${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework
+${BUILT_PRODUCTS_DIR}/KRActivityIndicatorView/KRActivityIndicatorView.framework
+${BUILT_PRODUCTS_DIR}/KRProgressHUD/KRProgressHUD.framework
+${BUILT_PRODUCTS_DIR}/OAuthSwift/OAuthSwift.framework
+${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
+${BUILT_PRODUCTS_DIR}/moa/moa.framework
