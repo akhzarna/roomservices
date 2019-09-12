@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18D3CB1C232A99D60087FD2D /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 18D3CB1B232A99D60087FD2D /* .gitignore */; };
 		7B0C28A522F5C3F700CCAC12 /* ImageSliderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0C289F22F5C3F700CCAC12 /* ImageSliderCell.swift */; };
 		7B0C28A622F5C3F700CCAC12 /* ImageSliderViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0C28A022F5C3F700CCAC12 /* ImageSliderViewDelegate.swift */; };
 		7B0C28A722F5C3F700CCAC12 /* ImageSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0C28A122F5C3F700CCAC12 /* ImageSliderView.swift */; };
@@ -107,6 +108,7 @@
 
 /* Begin PBXFileReference section */
 		065A4005E254702D19FCB5FC /* Pods-Room ServicesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Room ServicesTests.release.xcconfig"; path = "Target Support Files/Pods-Room ServicesTests/Pods-Room ServicesTests.release.xcconfig"; sourceTree = "<group>"; };
+		18D3CB1B232A99D60087FD2D /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		3991AFA748A7867AA043FDC2 /* Pods-Room Services.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Room Services.debug.xcconfig"; path = "Target Support Files/Pods-Room Services/Pods-Room Services.debug.xcconfig"; sourceTree = "<group>"; };
 		5B00826E2710D798FCC5B51E /* Pods-Room Services.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Room Services.release.xcconfig"; path = "Target Support Files/Pods-Room Services/Pods-Room Services.release.xcconfig"; sourceTree = "<group>"; };
 		668ABB4263B320A4118CBF6F /* Pods_Room_Services.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Room_Services.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -331,6 +333,7 @@
 		7B431D6B22D36BA600E1A5D9 = {
 			isa = PBXGroup;
 			children = (
+				18D3CB1B232A99D60087FD2D /* .gitignore */,
 				7B431D7622D36BA600E1A5D9 /* Room Services */,
 				7B431D8B22D36BA900E1A5D9 /* Room ServicesTests */,
 				7B431D9622D36BA900E1A5D9 /* Room ServicesUITests */,
@@ -621,6 +624,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18D3CB1C232A99D60087FD2D /* .gitignore in Resources */,
 				7B37D2A42314378F0098B202 /* RoomServices.sqlite in Resources */,
 				7B431D8222D36BA900E1A5D9 /* LaunchScreen.storyboard in Resources */,
 				7B431D7F22D36BA900E1A5D9 /* Assets.xcassets in Resources */,

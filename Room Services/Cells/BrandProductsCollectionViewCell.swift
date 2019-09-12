@@ -18,8 +18,8 @@ class BrandProductsCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
         
-        imageBorderView.layer.cornerRadius = imageBorderView.frame.width / 2
-        imageBorderView.layer.borderWidth = 0.5
+//        imageBorderView.layer.cornerRadius = imageBorderView.frame.width / 2
+//        imageBorderView.layer.borderWidth = 0.5
         imageBorderView.clipsToBounds = true
     }
     

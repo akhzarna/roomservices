@@ -113,9 +113,9 @@ class BrandsViewController: BaseViewController, UICollectionViewDelegate, UIColl
         
         // get a reference to our storyboard cell
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath as IndexPath) as! BrandsCollectionViewCell
-        cell.imageBorderView.layer.cornerRadius = cell.imageBorderView.frame.width/2
-        // imageBorderView.clipsToBounds = true
-        cell.imageBorderView.layer.borderWidth = 0.5
+//        cell.imageBorderView.layer.cornerRadius = cell.imageBorderView.frame.width/2
+//        // imageBorderView.clipsToBounds = true
+//        cell.imageBorderView.layer.borderWidth = 0.5
         
         // Use the outlet in our custom class to get a reference to the UILabel in the cell
         

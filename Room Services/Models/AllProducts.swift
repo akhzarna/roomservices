@@ -210,10 +210,10 @@ class AllProducts: NSObject {
             id = String(aVideoIdString)
         }
         if let aVideoId = dictionary["name"] as? String {
-            name = aVideoId
+            name = aVideoId.replaceDictionary(Constants.StRINGREPLACE.dictionary)
         }
         if let aVideoId = dictionary["slug"] as? String {
-            slug = aVideoId
+            slug = aVideoId.replaceDictionary(Constants.StRINGREPLACE.dictionary)
         }
         if let aPrice = dictionary["price"] as? String{
             price = aPrice
@@ -222,10 +222,10 @@ class AllProducts: NSObject {
             parent_id = aVideoId
         }
         if let aVideoId = dictionary["description"] as? String {
-            Description = aVideoId
+            Description = aVideoId.replaceDictionary(Constants.StRINGREPLACE.dictionary)
         }
         if let aVideoId = dictionary["display"] as? String {
-            display = aVideoId
+            display = aVideoId.replaceDictionary(Constants.StRINGREPLACE.dictionary)
         }
         if let aVideoId = dictionary["quantity"] as? Any {
             quantity = aVideoId
@@ -242,7 +242,7 @@ class AllProducts: NSObject {
             
     }
         if let aVideoId = dictionary["short_description"] as? String {
-            short_description = aVideoId
+            short_description = aVideoId.replaceDictionary(Constants.StRINGREPLACE.dictionary)
         }
         if let aVideoId = dictionary["permalink"] as? String {
             permalink = aVideoId
@@ -277,4 +277,20 @@ class AllProducts: NSObject {
         return result
     }
 
+}
+
+extension String{
+    func replaceDictionary(_ dictionary: [String: String]) -> String{
+        var result = String()
+        var i = -1
+        for (of , with): (String, String)in dictionary{
+            i += 1
+            if i<1{
+                result = self.replacingOccurrences(of: of, with: with)
+            }else{
+                result = result.replacingOccurrences(of: of, with: with)
+            }
+        }
+        return result
+    }
 }

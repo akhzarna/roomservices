@@ -168,4 +168,9 @@ struct Constants {
         static let IS_IPHONE_X = UIDevice.current.userInterfaceIdiom == .phone && ScreenSize.SCREEN_MAX_LENGTH >= 812.0
     }
     
+    
+    struct StRINGREPLACE {
+        static let dictionary = [";&amp":"","&amp;":"",":&amp":"","&amp:":"","&amp;amp;":""]
+    }
+    
 }

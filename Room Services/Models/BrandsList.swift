@@ -53,16 +53,16 @@ class BrandsList: NSObject {
             name = aVideoId
         }
         if let aVideoId = dictionary["slug"] as? String {
-            slug = aVideoId
+            slug = aVideoId.replaceDictionary(Constants.StRINGREPLACE.dictionary)
         }
         if let aVideoId = dictionary["parent"] as? Int{
             parent = aVideoId
         }
         if let aVideoId = dictionary["Description"] as? String {
-            Description = aVideoId
+            Description = aVideoId.replaceDictionary(Constants.StRINGREPLACE.dictionary)
         }
         if let aVideoId = dictionary["display"] as? String {
-            display = aVideoId
+            display = aVideoId.replaceDictionary(Constants.StRINGREPLACE.dictionary)
         }
         if let aVideoId = dictionary["image"] as? String {
             image = aVideoId

@@ -72,16 +72,16 @@ class ProductCategories: NSObject {
             name = aVideoId
         }
         if let aVideoId = dictionary["slug"] as? String {
-            slug = aVideoId
+            slug = aVideoId.replaceDictionary(Constants.StRINGREPLACE.dictionary)
         }
         if let aVideoId = dictionary["parent"] as? Int{
             parent = aVideoId
         }
         if let aVideoId = dictionary["Description"] as? String {
-            Description = aVideoId
+            Description = aVideoId.replaceDictionary(Constants.StRINGREPLACE.dictionary)
         }
         if let aVideoId = dictionary["display"] as? String {
-            display = aVideoId
+            display = aVideoId.replaceDictionary(Constants.StRINGREPLACE.dictionary)
         }
         if  let scr = dictionary["image"] as? NSDictionary{
           if  let aVideoId = scr["src"] as? String {

@@ -45,6 +45,9 @@ class ProductViewController: BaseViewController, UICollectionViewDelegate, UICol
     override func viewDidLoad() {
         super.viewDidLoad()
 
+                btnAdd.layer.cornerRadius = 12.0//itemImage.frame.height/1.5
+                btnAdd.clipsToBounds = true
+        
         // Do any additional setup after loading the view.
         //print(self.productArray.count, self.brandsArray.count)
         

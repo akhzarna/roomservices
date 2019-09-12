@@ -97,6 +97,8 @@ extension ProductHomeTableViewCell : UICollectionViewDataSource {
         if brandsArray == 3{
         let obj = self.productCat[indexPath.row]
         cell.lblProductName.text = obj.name
+            cell.lblProductName.isHidden = false
+
         cell.itemImage.sd_setImage(with: URL(string: obj.image), placeholderImage: UIImage(named: "placeholder.png"))
             cell.lblPrice.text = "KWD " + obj.price
         //print(obj.name)
@@ -112,6 +114,8 @@ extension ProductHomeTableViewCell : UICollectionViewDataSource {
         if brandsArray == 2{
             let obj = self.productCat[indexPath.row]
             cell.lblProductName.text = obj.name
+            cell.lblProductName.isHidden = false
+
             cell.itemImage.sd_setImage(with: URL(string: obj.image), placeholderImage: UIImage(named: "placeholder.png"))
              cell.lblPrice.text = "KWD " + obj.price
             layoutIfNeeded()
@@ -124,13 +128,13 @@ extension ProductHomeTableViewCell : UICollectionViewDataSource {
         }
         if brandsArray == 1{
             let obj = self.brandList[indexPath.row]
-            cell.lblProductName.text = obj.name
+//            cell.lblProductName.text = obj.name
             cell.itemImage.sd_setImage(with: URL(string: obj.image), placeholderImage: UIImage(named: "placeholder.png"))
             cell.lblPrice.isHidden = true
-            layoutIfNeeded()
-            
-            cell.imageRoundView.layer.cornerRadius = cell.imageRoundView.frame.width/2
-            cell.imageRoundView.layer.borderWidth = 1.5
+//            layoutIfNeeded()
+//
+//            cell.imageRoundView.layer.cornerRadius = cell.imageRoundView.frame.width/2
+//            cell.imageRoundView.layer.borderWidth = 1.5
             // cell.itemImage.layer.borderColor = [UIColor.gray].CGColor
             //  cell.imageRoundView.clipsToBounds = true
             
@@ -149,10 +153,10 @@ extension ProductHomeTableViewCell : UICollectionViewDataSource {
                  sectionNumber = 2
                 delegate?.cellTapped(index: indax, section: sectionNumber)
             }
-            if brandsArray == 1{
-                 sectionNumber = 1
-                delegate?.cellTapped(index: indax, section: sectionNumber)
-            }
+    //        if brandsArray == 1{
+     //            sectionNumber = 1
+      //          delegate?.cellTapped(index: indax, section: sectionNumber)
+       //     }
             if brandsArray == 3{
                  sectionNumber = 3
                 delegate?.cellTapped(index: indax, section: sectionNumber)
@@ -176,18 +180,25 @@ extension ProductHomeTableViewCell : UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
       //  let itemsPerRow:CGFloat = 4
       //  let hardCodedPadding:CGFloat = 5
-        
         let width = (self.homeCollectionView.frame.size.width - 40 ) / 4;
         var height:CGFloat = 0
-        if (Constants.DeviceType.IS_IPHONE_5){
-            height = CGFloat(width + 56)
+        
+
+            if (Constants.DeviceType.IS_IPHONE_5){
+                height = CGFloat(width + 56)
+            }
+            if (Constants.DeviceType.IS_IPHONE_6P){
+                height = CGFloat(width + 60)
+            }
+            if (Constants.DeviceType.IS_IPHONE_X){
+                height = CGFloat(width + 68)
+            
+            }else{
+                height = CGFloat(width + 56)
+
         }
-        if (Constants.DeviceType.IS_IPHONE_6P){
-            height = CGFloat(width + 60)
-        }
-        if (Constants.DeviceType.IS_IPHONE_X){
-            height = CGFloat(width + 68)
-        }
+
+
         
         return CGSize(width: width, height: height)
 
